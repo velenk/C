@@ -13,6 +13,10 @@ int main()
 	
 	int t = t1 - t2;
 	
+	if (t<0){
+		t = -t;
+	}
+	
 	printf("%dh%dmin\n",t/60,t%60);
 	
 	return 0;
