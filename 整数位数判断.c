@@ -12,6 +12,8 @@ int main()
 		x = -x;
 	}
 	
+	n++;
+	x /= 10;
 	while (x > 0){
 		n++;
 		x /= 10;
