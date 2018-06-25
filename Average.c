@@ -2,12 +2,18 @@
 
 int main()
 {
-	int a, b;
+	int sum = 0;
+	int count = 0;
+	int x;
 	
-	printf("Input two numbers:");
-	scanf("%d %d",&a,&b);
+	scanf("%d",&x);
+	while (x > 0){
+		sum += x;
+		count++;
+		scanf("%d",&x);
+	}
 	
-	printf("Average is %f",(a + b)/2.0);
+	printf("Average is %d",sum/count);
 	
 	return 0;
 }
