@@ -2,18 +2,28 @@
 
 int main()
 {
+	int num[100];
+	int cnt = 0;
 	int sum = 0;
-	int count = 0;
+	int average;
 	int x;
 	
 	scanf("%d",&x);
 	while (x > 0){
+		num[cnt] = x;
 		sum += x;
-		count++;
+		cnt++;
 		scanf("%d",&x);
 	}
 	
-	printf("Average is %d",sum/count);
+	average = sum/cnt;
 	
+	printf("Average is %d\n",average);
+	
+	for (cnt-=1;cnt>=0;cnt--){
+		if (num[cnt]>average){
+		printf("%d ",num[cnt]);
+		}
+	}
 	return 0;
 }
