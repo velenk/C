@@ -10,6 +10,9 @@ int main()
 	
 	scanf("%d",&x);
 	while (x > 0){
+		if (cnt>99){
+			break;
+		}
 		num[cnt] = x;
 		sum += x;
 		cnt++;
