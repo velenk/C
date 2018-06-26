@@ -4,7 +4,7 @@ int isprime(int x,int a[],int count);
 
 int main(void)
 {
-	const int num = 100;
+	const int num = 10;
 	int p[num];
 	int count = 1;
 	int x = 3;
@@ -17,8 +17,8 @@ int main(void)
 	
 	while(count<num){
 		if (isprime(x,p,count)){
-			p[count] = x;
-			count++;
+			p[count++] = x;
+			//count++;
 		}
 		x++;
 		
