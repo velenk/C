@@ -1,9 +1,7 @@
-#include <stdio.h>
+#include <cmath>
 
-int main() {
-    int a, b;
-    while (scanf("%d%d", &a, &b) != EOF) {
-        printf("%d\n", a+b);
-    }
+int main() 
+{
+    pow(1,1);
     return 0;
 }
